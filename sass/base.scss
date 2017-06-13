@@ -709,6 +709,9 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+    .gallery__section .gallery-images__wrapper .flex-row {
+        align-items: center;
+    }
     .gallery__section,.blog__section,.contact__section {
         padding: 83px 0px 100px;
     }
@@ -744,7 +747,7 @@ footer {
     .gallery-image__box{
         padding: 25px 0px 0px; 
             img {
-                max-width: 50%;
+                max-width: 80%;
             }
     }
     .our-service__section {
