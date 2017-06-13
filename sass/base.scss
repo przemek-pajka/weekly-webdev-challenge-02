@@ -96,7 +96,7 @@ img {
     font-weight: 700;
 }
 header {
-    padding: 25px 0px 406px;
+    padding: 25px 0px 356px;
     background-color: #f8f8fa;
     background: url('../images/header-img-bg.png') 58% 0% no-repeat;
 
@@ -192,7 +192,7 @@ header {
         height: 40px;
         display: block;
         position: absolute;
-        top: 890px;
+        top: 840px;
         left: 0;
         right: 0;
         bottom: 0;
@@ -219,7 +219,7 @@ header {
 .about-us__section {
     background: #00bebe;
     color: #fff;
-    padding: 180px 0px 235px;
+    padding: 70px 0px 25px;
 
     .about-us-wrapper {
         .about-us-wrapper__box {
@@ -485,6 +485,7 @@ header {
         min-height: 445px;
         display: flex;
         flex: 1;
+        padding: 0px;
 
         form {
             width: 100%;
@@ -629,12 +630,10 @@ footer {
     header .top-wrapper {
         padding: 40px 0px 20px;
     }
-    .blog-article__item:nth-of-type(2) {
-            margin: 0px 30px;
-        }
     .about-us-wrapper__box {
             max-width: 524px;
             float: right;
+            padding-top: 85px;
     }
     .gallery-head__description__box {
         width: 580px;
@@ -643,8 +642,8 @@ footer {
         max-width: 1172px;
         min-height: 980px;
         margin: 0 auto;
-    }
-    .gallery-image__large__box {
+        
+        .gallery-image__large__box {
             max-width: 770px;
             height: 550px;
         }
@@ -666,15 +665,19 @@ footer {
         .gallery-image__box {
             padding: 0px;
         }
+    }
+        
         .subscribe__box {
             width: 770px;
+
+            #email__subscribe {
+                width: 570px;
+            }
+            button {
+                margin-left: 30px;
+            }
         }
-        .subscribe__box #email__subscribe {
-            width: 570px;
-        }
-        .subscribe__box button {
-            margin-left: 30px;
-        }
+
         .blog-head__description__box {
             width: 570px;
         }
@@ -682,13 +685,19 @@ footer {
             max-width: 1230px;
             height: 310px;
             padding: 0px 30px;
+
+            .blog-article__item:nth-of-type(2) {
+                margin: 0px 30px;
+            }
         }
-        .form-wrapper {
-            max-width: 500px;
-        }
-        .contact-col .company-contact__details {
-            padding-left: 170px;
-            max-width: 487px;
+        .contact-col {
+             .form-wrapper {
+                max-width: 500px;
+            }
+            .company-contact__details {
+                padding-left: 170px;
+                max-width: 487px;
+            }
         }
 }
 
@@ -882,6 +891,9 @@ footer {
         background: url(../images/header-img-bg.png) 58% 0% no-repeat;
         .homepage-wrapper {
             padding-top: 162px;
+        }
+        .scroll-icon {
+            display: none;
         }
     }
 }
