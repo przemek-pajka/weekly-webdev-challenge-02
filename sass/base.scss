@@ -116,7 +116,6 @@ header {
             display: flex;
         }
         .top-wrapper__company-name {
-            display: flex;
             width: 129px;
         }
         .top-wrapper__nav {
@@ -827,10 +826,6 @@ footer {
             }
         }
     }
-    header .top-wrapper .container.flex {
-        flex: 1;
-        align-items: center;
-    }
     header .top-wrapper .container.flex{
         display: block;
     }
@@ -861,9 +856,6 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-    header .top-wrapper .container.flex {
-        flex: 1;
-    }
     .contact__section .contact-col .form-wrapper {
         form {
             ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
