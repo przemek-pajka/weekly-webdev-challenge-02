@@ -260,7 +260,6 @@ header {
                     justify-content: center;
                     text-align: center;
                     flex: 1;
-                    height: 100%;
                     font-size: 20px;
                     font-weight: 700;
                     border-right: 1px solid #9d9d9d;
@@ -306,6 +305,10 @@ header {
         justify-content: space-between;
         flex-wrap: wrap;
 
+        .top-flex__gallery {
+            justify-content: center;
+            align-items: center;
+        }
         .flex-col {
             display: flex;
             flex-direction: column;
@@ -314,8 +317,7 @@ header {
         .flex-row {
             display: flex;
             width: 100%;
-            justify-content: space-between;
-            align-items: flex-end;
+            justify-content: center;
         }
         .gallery-image__box {
             
@@ -367,7 +369,6 @@ header {
     }
     .blog-wrapper__articles {
         display: flex;
-        justify-content: space-between;
         margin: 50px auto 0px;
 
         .blog-article__item {
@@ -482,8 +483,6 @@ header {
 
     .form-wrapper {
         min-height: 445px;
-        display: flex;
-        flex: 1;
         padding: 0px;
 
         form {
@@ -493,7 +492,6 @@ header {
             flex-direction: column;
             
         input[type="text"],textarea {
-            display: flex;
             width: 100%;
             height: 50px;
             background-color: rgba(0, 196, 196,0.502);
@@ -642,7 +640,14 @@ footer {
         min-height: 980px;
         margin: 0 auto;
         
+        .top-flex__gallery {
+            display: flex; 
+            width: 100%;
+            flex-direction: row; 
+        }
+        
         .gallery-image__large__box {
+            display: flex;
             max-width: 770px;
             height: 550px;
         }
@@ -658,16 +663,13 @@ footer {
             height: 400px;
         }
         .gallery-image__small__box {
+            display: flex;
             max-width: 370px;
-            height: 260px;
-        }
-        .gallery-image__box {
-            padding: 0px;
         }
     }
         
         .subscribe__box {
-            width: 770px;
+            max-width: 770px;
 
             #email__subscribe {
                 width: 570px;
