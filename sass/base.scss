@@ -317,7 +317,7 @@ header {
         .flex-row {
             display: flex;
             width: 100%;
-            justify-content: center;
+            justify-content: center
         }
         .gallery-image__box {
             
@@ -645,12 +645,6 @@ footer {
             width: 100%;
             flex-direction: row; 
         }
-        
-        .gallery-image__large__box {
-            display: flex;
-            max-width: 770px;
-            height: 550px;
-        }
         .flex-col {
             height: 550px;
         }
@@ -658,9 +652,13 @@ footer {
             flex-direction: row; 
             margin-top: 30px;
         }
+        
+        .gallery-image__large__box {
+            display: flex;
+            max-width: 770px;
+        }
         .gallery-image__medium__box {
             max-width: 570px;
-            height: 400px;
         }
         .gallery-image__small__box {
             display: flex;
